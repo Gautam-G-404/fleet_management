@@ -104,7 +104,9 @@ bench start
 ### REST API
 <img width="1387" height="706" alt="image" src="https://github.com/user-attachments/assets/d3e58399-e3a7-41d1-ad28-9fdae895329b" />
 
+### Demo Video
 
+[Watch Demo Video](https://drive.google.com/file/d/1LbH-0mPyjwxK5ucA51g_hK3pSFSELYFX/view?usp=drive_link)
 
 ## License
 
