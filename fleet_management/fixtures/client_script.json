@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Trip",
+  "enabled": 1,
+  "modified": "2026-09-12 14:20:14.833463",
+  "module": null,
+  "name": "Trip - check vehicle",
+  "script": "frappe.ui.form.on('Trip', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tfrm.add_custom_button(\"Check Vehicle\", ()=>{\n\t\t    frappe.call({\n             method: \"fleet_management.api.check_vehicle\",\n                args: {\n                vehicle: frm.doc.vehicle\n            },\n    callback: function(response) {\n        let msg=response.message\n        frappe.msgprint(msg)\n    }\n})\n\t\t})\n\t}\n})",
+  "view": "Form"
+ }
+]
